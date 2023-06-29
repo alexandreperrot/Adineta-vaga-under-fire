@@ -1,0 +1,18 @@
+includeFile=geometry
+
+##Dose###
+s:Sc/dose/Quantity   = "DoseToMedium"
+s:Sc/dose/Component  = "Patch"
+s:Sc/dose/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/dose/OutputFile = "outputs/F_Dose_3.10E3"
+i:Sc/dose/Xbins      =50
+i:Sc/dose/Ybins      =50
+
+##Trackcount##
+s:Sc/count/Quantity = "SurfaceTrackCount"
+s:Sc/count/Surface  = "Patch/ZPlusSurface"
+s:Sc/count/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/count/OutputFile = "outputs/F_Count_3.10E3"
+i:Sc/count/Xbins      =50
+i:Sc/count/Ybins      =50
+s:Sc/count/OnlyIncludeParticlesOfGeneration ="Primary"

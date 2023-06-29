@@ -1,0 +1,19 @@
+###Agarose###
+
+sv:Ma/Agarose/Components = 3 "Carbon" "Hydrogen" "Oxygen"
+uv:Ma/Agarose/Fractions = 3  0.47 0.06 0.47
+d:Ma/Agarose/Density = 0.9 g/cm3
+s:Ma/Agarose/DefaultColor="yellow"
+
+###Peau###
+
+sv:Ma/Skin/Components = 8 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sulfur" "Chlorine" "Sodium" "Potassium"
+uv:Ma/Skin/Fractions = 8 0.0063 0.1863 0.0434 0.5855 0.0597 0.0660 0.0285 0.0243
+d:Ma/Skin/Density = 1.09 g/cm3
+s:Ma/Skin/DefaultColor="green"
+
+###polypropylene####
+sv:Ma/polypropylene/Components = 2 "Carbon" "Hydrogen"
+uv:Ma/polypropylene/Fractions = 2 0.333 0.667
+d:Ma/polypropylene/Density = 0.9 g/cm3
+s:Ma/polypropylene/DefaultColor="grey"

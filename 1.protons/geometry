@@ -1,0 +1,13 @@
+includeFile = materials
+
+###Patch###
+s:Ge/Patch/Type     = "TsBox" 
+s:Ge/Patch/Material = "Skin"
+s:Ge/Patch/Parent   = "World"
+s:Ge/Patch/Color    = "green"
+d:Ge/Patch/HLX      = 0.05 mm
+d:Ge/Patch/HLY      = 0.05 mm
+d:Ge/Patch/HLZ      = 0.015 mm
+
+
+

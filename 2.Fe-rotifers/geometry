@@ -1,0 +1,23 @@
+includeFile = materials
+
+###PCR###
+s:Ge/PCR/Type     = "TsBox"
+s:Ge/PCR/material = "polypropylene"
+s:Ge/PCR/Parent   = "World"
+s:Ge/PCR/Color    = "grey"
+d:Ge/PCR/HLX      = 0.05 mm
+d:Ge/PCR/HLY      = 0.05 mm
+d:Ge/PCR/HLZ      = 0.125 mm 
+d:Ge/PCR/TransZ   = -0.3 mm
+
+###Patch###
+s:Ge/Patch/Type     = "TsBox" 
+s:Ge/Patch/Material = "Skin"
+s:Ge/Patch/Parent   = "World"
+s:Ge/Patch/Color    = "green"
+d:Ge/Patch/HLX      = 0.05 mm
+d:Ge/Patch/HLY      = 0.05 mm
+d:Ge/Patch/HLZ      = 0.015 mm
+
+
+

@@ -1,0 +1,38 @@
+includeFile = materials
+
+###SI3N4###
+s:Ge/SI3N4/Type         = "TsBox"
+sv:Ma/SI3N4/Components  = 2 "Silicon" "Nitrogen"
+uv:Ma/SI3N4/Fractions   = 2 0.6007 0.3993 
+d:Ma/SI3N4/Density      = 3 g/cm3   
+s:Ma/SI3N4/DefaultColor = "red"
+s:Ge/SI3N4/Material     = "SI3N4"
+s:Ge/SI3N4/Parent       = "World"
+d:Ge/SI3N4/HLX          = 0.1 m
+d:Ge/SI3N4/HLY          = 0.1 m
+d:Ge/SI3N4/HLZ          = 0.0005 mm 
+d:Ge/SI3N4/TransZ     = -3.0155 mm
+
+
+###Air###
+s:Ge/Air/Type       = "TsBox"
+s:Ge/Air/Material   = "Air"
+s:Ge/Air/Parent     = "World"
+d:Ge/Air/HLX        = 0.1 m
+d:Ge/Air/HLY        = 0.1 m
+d:Ge/Air/HLZ        = 1.5 mm 
+d:Ge/Air/TransZ     = -1.515 mm
+
+
+###Patch###
+s:Ge/Patch/Type     = "TsBox" 
+s:Ge/Patch/Material = "Skin"
+s:Ge/Patch/Parent   = "World"
+s:Ge/Patch/Color    = "green"
+d:Ge/Patch/HLX      = 7 mm
+d:Ge/Patch/HLY      = 7 mm
+d:Ge/Patch/HLZ      = 0.015 mm
+d:Ge/Patch/TransZ   = 0 mm
+
+
+

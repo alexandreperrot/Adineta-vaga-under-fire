@@ -1,0 +1,46 @@
+s:Ge/World/Material="Vacuum"
+d:Ge/World/HLX = 0.2 mm
+d:Ge/World/HLY = 0.2 mm
+d:Ge/World/HLZ = 1 mm
+
+includeFile=materials
+includeFile=geometry
+includeFile=scorer
+
+###Source###
+s:Ge/FeSource/Parent = "World"
+s:Ge/FeSource/Type   = "Group"
+d:Ge/FeSource/TransX = 0. m
+d:Ge/FeSource/TransY = 0. m
+d:Ge/FeSource/TransZ = -1 m
+
+s:So/Fe/Type   = "Beam"
+s:So/Fe/Component = "FeSource"
+s:So/Fe/BeamParticle = "1000260560" 
+d:So/Fe/BeamEnergy = 28 GeV #car 0.5 GeV c'est l'énergie par nucléon (26p et 30n)
+u:So/Fe/BeamEnergySpread = 0. 
+s:So/Fe/BeamPositionCutoffShape = "Rectangle"
+s:So/Fe/BeamPositionDistribution = "Flat"
+d:So/Fe/BeamPositionCutoffX = 0.05 mm 
+d:So/Fe/BeamPositionCutoffY = 0.05 mm 
+s:So/Fe/BeamAngularDistribution = "None"
+ic:So/Fe/NumberOfHistoriesInRun = 3000
+
+
+###Physics###
+sv:Ph/Default/Modules = 1 "g4em-livermore"
+
+###Graphics###
+#s:Gr/ViewA/Type               = "OpenGL"
+#i:Gr/ViexA/WindowSizeX        = 1024
+#i:Gr/ViexA/WindowSizeY        = 768
+b:Gr/ViewA/IncludeAxes       = "False"
+#d:Gr/ViewA/Theta              = 45 deg
+#d:Gr/ViewA/Phi                = 45 deg
+#u:Gr/ViewA/zoom               = 1.
+
+###Topas###
+i:Ts/ShowHistoryCountAtInterval = 1000000
+b:Ts/PauseBeforeQuit = "True"
+i:Ts/NumberOfThreads = 24
+#b:Ts/UseQt = "True"

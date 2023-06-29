@@ -1,0 +1,46 @@
+s:Ge/World/Material="Vacuum"
+d:Ge/World/HLX = 0.2 mm
+d:Ge/World/HLY = 0.2 mm
+d:Ge/World/HLZ = 0.2 mm
+
+includeFile=materials
+includeFile=geometry
+includeFile=scorer
+
+###Source###
+s:Ge/Source/Parent = "World"
+s:Ge/Source/Type   = "Group"
+d:Ge/Source/TransX = 0. m
+d:Ge/Source/TransY = 0. m
+d:Ge/Source/TransZ = -1. m
+
+s:So/Prot/Type                     = "Beam"
+s:So/Prot/Component                = "Source"
+s:So/Prot/BeamParticle             = "proton"
+d:So/Prot/BeamEnergy               = 4. MeV
+u:So/Prot/BeamEnergySpread         = 0. 
+s:So/Prot/BeamPositionCutoffShape  = "Rectangle"
+s:So/Prot/BeamPositionDistribution = "Flat"
+d:So/Prot/BeamPositionCutoffX      = 0.05 mm
+d:So/Prot/BeamPositionCutoffY      = 0.05 mm 
+s:So/Prot/BeamAngularDistribution  = "None"
+ic:So/Prot/NumberOfHistoriesInRun  = 25000
+
+
+###Physics###
+sv:Ph/Default/Modules = 1 "g4em-livermore"
+
+###Graphics###
+#s:Gr/ViewA/Type               = "OpenGL"
+#i:Gr/ViexA/WindowSizeX        = 1024
+#i:Gr/ViexA/WindowSizeY        = 768
+#b:Gr/ViewA/IncludeAxes       = "False"
+#d:Gr/ViewA/Theta              = 45 deg
+#d:Gr/ViewA/Phi                = 45 deg
+#u:Gr/ViewA/zoom               = 1.
+
+###Topas###
+i:Ts/ShowHistoryCountAtInterval = 1000000
+b:Ts/PauseBeforeQuit = "True"
+i:Ts/NumberOfThreads = 24
+#b:Ts/UseQt = "True"
